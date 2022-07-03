@@ -7,8 +7,7 @@
 
 int main(void)
 {
-
-	int tens;
+int tens;
 
 	int ones;
 
@@ -24,9 +23,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-
 		}
-
 	}
 	putchar('\n');
 
