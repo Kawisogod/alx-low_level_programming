@@ -2,7 +2,7 @@
 
 /**
  * main - print 0-9 separated with commas, using putchar
- * Reverse: Always 0 (success)
+ * Return: Always 0 (success)
 */
 
 int main(void)
