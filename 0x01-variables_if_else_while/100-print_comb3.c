@@ -15,7 +15,6 @@ int tens;
 	{
 		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
 		{
-
 			putchar(tens);
 			putchar(ones);
 		if (!(tens == '9' && ones == '9')) /*skip comma at end*/
