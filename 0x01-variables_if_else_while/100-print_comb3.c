@@ -7,25 +7,34 @@
 
 int main(void)
 {
-int tens;
+	int a, b, c;
 
-int ones;
+	a = 0;
 
-for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
-{
-for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
-{
-putchar(tens);
-putchar(ones);
-if (!(tens == '9' && ones == '9')) /*skip comma at end*/
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-putchar('\n');
+	while (a < 100)
+	{
 
-return (0);
+		b = a % 10;
+		c = a / 10;
+
+		if (c < b)
+		{
+
+			putchar(c + '0');
+			putchar(b + '0');
+
+			if (a < 89)
+			{
+
+				putchar(44);
+				putchar(32);
+			}
+		}
+
+		a++;
+	}
+	putchar('\n');
+
+	return (0);
 }
 
