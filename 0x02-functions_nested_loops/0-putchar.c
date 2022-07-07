@@ -10,7 +10,7 @@ int main(void)
 
 	while (myvar[i] != '\0')
 	{
-		_putcha(myvar[i]);
+		_putchar(myvar[i]);
 		i++;
 	}
 	_putchar('\n');
