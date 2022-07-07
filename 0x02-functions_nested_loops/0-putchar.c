@@ -1,21 +1,18 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * main - prints putchar, followed by new line
- * Return:Always 0 (success)
+ * main - Entry point
+ * Return: 0 (success)
  */
-
 int main(void)
 {
-putchar(");
+	char myvar[] = "_putchar";
+	int i = 0;
 
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	while (myvar[i] != '\0')
+	{
+		_putcha(myvar[i]);
+		i++;
+	}
 	_putchar('\n');
 
 	return (0);
