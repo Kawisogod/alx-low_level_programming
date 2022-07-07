@@ -9,6 +9,7 @@ void print_alphabet(void)
 
 	while (c <= 'z')
 	{
+		print_alphabet();
 		_putchar(c);
 		c++;
 	}
