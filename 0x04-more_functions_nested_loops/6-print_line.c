@@ -1,18 +1,14 @@
-i#include "main.h"
+#include "main.h"
 /**
- * print_line - print a line
- * @n: length of line
+ * print_line - print the character "_" n times to draw a line
+ * @n: number of characters to draw
  */
 void print_line(int n)
 {
+	int times = 0;
 
-	if (n <= 0)
-		_putchar('\n');
-	int i;
-
-	for (i = 0; i < n; i++)
-	{
+	for (times = n; times > 0; times--)
 		_putchar('_');
-	}
+
 	_putchar('\n');
 }
