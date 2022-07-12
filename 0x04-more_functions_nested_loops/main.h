@@ -37,10 +37,6 @@ void print_diagonal(int n);
  */
 void more_numbers(void);
 /**
- * print_line - draws a straight line in the terminal
- */
-void print_diagonal(int n);
-/**
  * print_square - prints a square followed by a new line
  */
 void print_square(int size);
