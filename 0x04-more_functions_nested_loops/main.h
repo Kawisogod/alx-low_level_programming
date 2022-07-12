@@ -23,6 +23,10 @@ void print_numbers(void);
 /**
  * print_most_numbers - print numbers from 0 to 9 except 2 and 4
  */
+void print_line(int n)
+/**
+ * print_line - draws a straight line in the terminal
+ */
 void print_most_numbers(void);
 /**
  * more_numbers - prints 10 times the numbers form 0 to 14
