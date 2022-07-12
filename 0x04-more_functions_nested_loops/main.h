@@ -29,6 +29,10 @@ void print_most_numbers(void);
  */
 void print_line(int n);
 /**
+ * print_diagonal - draws a diagonal line on the terminal
+ */
+void print_diagonal(int n);
+/**
  * more_numbers - prints 10 times the numbers form 0 to 14
  */
 void more_numbers(void);
