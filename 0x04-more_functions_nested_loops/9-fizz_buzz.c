@@ -5,9 +5,9 @@
  * main - main function
  * checks through numbers from 1 - 100
  * and print number if it is not a multiple of 3 or 5
- * print fizz if its a multiple of 3
- * buzz if its a multiple of 5
- * and fizz buzz if its both a multiple of 3 and 5
+ * print Fizz if its a multiple of 3
+ * Buzz if its a multiple of 5
+ * and FizzBuzz if its both a multiple of 3 and 5
  *
  * created by: sanctus-peter
  * cc: 7th july, 2022
@@ -16,7 +16,7 @@
  */
 int main(void)
 {
-	int ii = 1;
+int ii = 1;
 
 	do {
 		if ((ii % 3 == 0) && (ii % 5 == 0))
