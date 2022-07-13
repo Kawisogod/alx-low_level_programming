@@ -1,28 +1,37 @@
 #include <stdio>
+#define stopvar 100
+
 /**
- * main - prints the number from 1 to 100 followed by a new line
- * for multiples of 3 print Fizz
- * for multiples of 5 print Buzz
- * for multiples of 3 and 5 print FizzBuzz
- * Return: returns 0
+ * main - main function
+ * checks through numbers from 1 - 100
+ * and print number if it is not a multiple of 3 or 5
+ * print fizz if its a multiple of 3
+ * buzz if its a multiple of 5
+ * and fizz buzz if its both a multiple of 3 and 5
+ *
+ * created by: sanctus-peter
+ * cc: 7th july, 2022
+ *
+ * Return: 0 if successful
  */
 int main(void)
 {
-	int i;
+	int ii = 1;
 
-	for (i = 1; i <= 100; i++)
-	{
-		if (i % 5 == 0 && i % 3 == 0)
-			printf("%s", "FizzBuzz");
-		else if (i % 3 == 0)
-			printf("%s", "Fizz");
-		else if (i % 5 == 0)
-			printf("%s", "Buzz");
+	do {
+		if ((ii % 3 == 0) && (ii % 5 == 0))
+			printf("FizzBuzz");
+		else if (ii % 3 == 0)
+			printf("Fizz");
+		else if (ii % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d", i);
-		if (i != 100)
+			printf("%d", ii);
+		if (ii != stopVar)
 			printf(" ");
-	}
+		ii++;
+		} while (ii < stopVar + 1);
 	printf("\n");
+
 	return (0);
 }
