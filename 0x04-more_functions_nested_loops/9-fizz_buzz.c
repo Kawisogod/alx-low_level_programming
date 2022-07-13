@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #define stopvar 100
 
 /**
@@ -9,11 +9,12 @@
  * Buzz if its a multiple of 5
  * and FizzBuzz if its both a multiple of 3 and 5
  *
- * created by: sanctus-peter
- * cc: 7th july, 2022
+ * Created by: kawiso-godfrey
+ * cc: 13th july, 2022
  *
  * Return: 0 if successful
  */
+
 int main(void)
 {
 int ii = 1;
