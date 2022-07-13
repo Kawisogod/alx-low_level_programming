@@ -27,7 +27,7 @@ int sign = 1, base = 0, i = 0;
 
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (base > INT_MAX / 10	|| (base == INT_MA / 10 && str[i] - '0' > 7))
+		if (base > INT_MAX / 10 || (base == INT_MA / 10 && str[i] - '0' > 7))
 		{
 			if (sign == 1)
 				return (INT_MAX);
