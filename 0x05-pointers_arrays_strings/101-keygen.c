@@ -15,9 +15,7 @@
 int main(void)
 {
 char password[100];
-
 int randValue, num = 0, i = 0;
-
 srand(time(NULL));
 
 	while (num < stopLimit)
