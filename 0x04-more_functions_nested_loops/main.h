@@ -7,7 +7,6 @@ void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
-void print_triangle(int size);
 void print_number(int n);
 int _putchar(char c);
 void print_alphabet_x10(void);
@@ -22,15 +21,4 @@ int add(int, int);
 void print_to_98(int n);
 void print_alphabet(void);
 void print_times_table(int n);
-/**
- * main - main function
- * checks through numbers from 1 - 100
- * and print number if it is not a multiple of 3 or 5
- * print Fizz if its a multiple of 3
- * Buzz if its a multiple of 5
- * and FizzBuzz if its both a multiple of 3 and 5
- *
- * Created by: Sanctus-Peter
- * cc: 7th july, 2022
- */
 int main(void);
