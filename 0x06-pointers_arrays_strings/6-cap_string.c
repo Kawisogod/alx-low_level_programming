@@ -8,9 +8,9 @@
  */
 char *cap_string(char *str)
 {
-	int i, j;
-	int hasWord;
-	char separators[] = ",;.!?(){}\n\t\" ";
+int i, j;
+int hasWord;
+char separators[] = ",;.!?(){}\n\t\" ";
 
 	for (i = 0, hasWord = 0; str[i] != '\0'; i++)
 	{
