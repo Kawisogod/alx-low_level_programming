@@ -1,11 +1,14 @@
 #include "main.h"
+
 /**
  * print_times_table - output n times table
  * @n: arg type int
+ *
  */
+
 void print_times_table(int n)
 {
-	int x = 0, y, z;
+int x = 0, y, z;
 
 	if (n > 15 || n < 0)
 		return;
