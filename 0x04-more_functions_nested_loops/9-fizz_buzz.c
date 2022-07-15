@@ -28,10 +28,10 @@ int ii = 1;
 			printf("Buzz");
 		else
 			printf("%d", ii);
-		if (ii != stopVar)
+		if (ii != stopvar)
 			printf(" ");
 		ii++;
-		} while (ii < stopVar + 1);
+		} while (ii < stopvar + 1);
 	printf("\n");
 
 	return (0);
