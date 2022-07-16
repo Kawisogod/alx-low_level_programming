@@ -1,35 +1,36 @@
-#include <time.h>
-#include <stdlib.h>
 #include <stdio.h>
-#define stopLimit 2645
-#define asciiStop 127
-#define asciiStart 32
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - generates a random password
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
  *
- * Return: 0 if success
- *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-char password[100];
-int randValue, num = 0, i = 0;
-srand(time(NULL));
+	int i, sum, n;
+	int pass[100];
 
-	while (num < stopLimit)
+	sum = 0;
+
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
 	{
-		randValue = random() % asciiStop;
-		if (randValue > asciiStart)
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
 		{
-			num += randValue;
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
 		}
 	}
-
-	password[i++] = (2772 - num);
-	password[i] = '\0';
-	printf("%s", password);
 
 	return (0);
 }
