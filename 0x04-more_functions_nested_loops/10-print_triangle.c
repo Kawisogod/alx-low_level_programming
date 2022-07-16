@@ -3,13 +3,13 @@
 /**
  * print_triangle - check for a digit
  * @size : integer type
- * Return: void
+ * Return:void
  */
 
 void print_triangle(int size)
 {
 
-int i = 1, ii;
+	int i = 1, ii;
 
 	while (i <= size && size > 0)
 	{
@@ -27,7 +27,7 @@ int i = 1, ii;
 		}
 
 		_putchar('\n');
-		ii++;
+		i++;
 	}
 	if (i == 1)
 		_putchar('\n');
