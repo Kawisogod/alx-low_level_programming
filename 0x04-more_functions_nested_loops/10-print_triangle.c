@@ -5,7 +5,7 @@
  * @var: size of triangle to print
  *
  * Created by: kawiso-godfrey
- * cc: 16th july 2022
+ * cc: 13th july 2022
  */
 
 void print_triangle(int var)
@@ -15,6 +15,7 @@ void print_triangle(int var)
 	else
 	{
 		int size = 1;
+
 		do {
 int ii;
 
